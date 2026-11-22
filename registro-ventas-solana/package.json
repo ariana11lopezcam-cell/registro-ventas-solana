@@ -1,0 +1,33 @@
+{
+  "name": "registro-ventas-solana",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "configurar-idl": "node scripts/configurar-idl.mjs",
+    "cliente": "node scripts/generar-cliente.mjs"
+  },
+  "dependencies": {
+    "@solana/kit": "^2.0.0",
+    "@solana/wallet-adapter-base": "^0.9.23",
+    "@solana/wallet-adapter-react": "^0.15.35",
+    "@solana/wallet-adapter-react-ui": "^0.9.35",
+    "@solana/wallet-adapter-wallets": "^0.19.32",
+    "@solana/web3.js": "^1.95.8",
+    "buffer": "^6.0.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@codama/nodes-from-anchor": "^1.0.0",
+    "@codama/renderers-js": "^1.0.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.3",
+    "codama": "^1.0.0",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.10"
+  }
+}
